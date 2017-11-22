@@ -22,6 +22,15 @@ class AppCoordinator {
         
         window.rootViewController = navigationVC
         window.makeKeyAndVisible()
+        
+        let provider = HotGirlImageProvider()
+        provider.getImages { success,images,error in
+            guard success else {
+                print(error!)
+                return
+            }
+            homeVC.updateDataSource(images: images!)
+        }
     }
 }
 

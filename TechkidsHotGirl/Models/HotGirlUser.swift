@@ -8,9 +8,10 @@
 
 import Foundation
 
-struct HotGirlUser {
+struct HotGirlUser: Codable {
+    var _id: String
     var username: String
     var email: String
-    var userAvatar: String
-    var title: String
+    var userAvatar: URL?
+    var title: String?
 }

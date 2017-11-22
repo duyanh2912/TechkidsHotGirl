@@ -18,8 +18,10 @@
 		500A31A61FC45B7400C42A36 /* HotGirlUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A31A51FC45B7400C42A36 /* HotGirlUser.swift */; };
 		500A31AB1FC45E7A00C42A36 /* HotGirlImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A31A91FC45E7A00C42A36 /* HotGirlImageCollectionViewCell.swift */; };
 		500A31AC1FC45E7A00C42A36 /* HotGirlImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500A31AA1FC45E7A00C42A36 /* HotGirlImageCollectionViewCell.xib */; };
-		500A31AE1FC473A400C42A36 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A31AD1FC473A400C42A36 /* HomeViewModel.swift */; };
-		500A31B01FC474D900C42A36 /* HomeCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A31AF1FC474D900C42A36 /* HomeCollectionViewDataSource.swift */; };
+		505D4A401FC5179E002D514B /* HotGirlImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D4A3F1FC5179E002D514B /* HotGirlImageProvider.swift */; };
+		505D4A421FC5180E002D514B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D4A411FC5180E002D514B /* Constants.swift */; };
+		505D4A441FC51ECC002D514B /* HotGirlimageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D4A431FC51ECC002D514B /* HotGirlimageList.swift */; };
+		505D4A461FC533FE002D514B /* CollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D4A451FC533FE002D514B /* CollectionViewRegisterable.swift */; };
 		ED30F01F66070F89836EEB08 /* Pods_TechkidsHotGirl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D1C8AEAFDDD61F75D1FF23 /* Pods_TechkidsHotGirl.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +41,10 @@
 		500A31A51FC45B7400C42A36 /* HotGirlUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotGirlUser.swift; sourceTree = "<group>"; };
 		500A31A91FC45E7A00C42A36 /* HotGirlImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotGirlImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		500A31AA1FC45E7A00C42A36 /* HotGirlImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotGirlImageCollectionViewCell.xib; sourceTree = "<group>"; };
-		500A31AD1FC473A400C42A36 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		500A31AF1FC474D900C42A36 /* HomeCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		505D4A3F1FC5179E002D514B /* HotGirlImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotGirlImageProvider.swift; sourceTree = "<group>"; };
+		505D4A411FC5180E002D514B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		505D4A431FC51ECC002D514B /* HotGirlimageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotGirlimageList.swift; sourceTree = "<group>"; };
+		505D4A451FC533FE002D514B /* CollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewRegisterable.swift; sourceTree = "<group>"; };
 		D97AC200D780EB660C089C0C /* Pods-TechkidsHotGirl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechkidsHotGirl.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechkidsHotGirl/Pods-TechkidsHotGirl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,10 +84,11 @@
 				500A31861FC4585700C42A36 /* AppDelegate.swift */,
 				500A318A1FC4585700C42A36 /* Main.storyboard */,
 				500A31A21FC459FE00C42A36 /* Coordinators */,
+				505D4A3E1FC5174C002D514B /* Providers */,
 				500A31981FC458A000C42A36 /* View Controllers */,
-				500A319B1FC458D200C42A36 /* View Models */,
 				500A319C1FC458DC00C42A36 /* Models */,
 				500A319F1FC4591B00C42A36 /* Extensions */,
+				505D4A411FC5180E002D514B /* Constants.swift */,
 				500A318D1FC4585700C42A36 /* Assets.xcassets */,
 				500A318F1FC4585700C42A36 /* LaunchScreen.storyboard */,
 				500A31921FC4585700C42A36 /* Info.plist */,
@@ -95,19 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				500A31991FC458B800C42A36 /* HomeViewController.swift */,
-				500A31AF1FC474D900C42A36 /* HomeCollectionViewDataSource.swift */,
 				500A31A91FC45E7A00C42A36 /* HotGirlImageCollectionViewCell.swift */,
 				500A31AA1FC45E7A00C42A36 /* HotGirlImageCollectionViewCell.xib */,
 			);
 			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		500A319B1FC458D200C42A36 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-				500A31AD1FC473A400C42A36 /* HomeViewModel.swift */,
-			);
-			path = "View Models";
 			sourceTree = "<group>";
 		};
 		500A319C1FC458DC00C42A36 /* Models */ = {
@@ -123,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				500A31A01FC4591B00C42A36 /* StoryboardInstantiable.swift */,
+				505D4A451FC533FE002D514B /* CollectionViewRegisterable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -133,6 +130,15 @@
 				500A31A31FC45A1000C42A36 /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		505D4A3E1FC5174C002D514B /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				505D4A3F1FC5179E002D514B /* HotGirlImageProvider.swift */,
+				505D4A431FC51ECC002D514B /* HotGirlimageList.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		59A3954FA6FB6BF9D7637508 /* Frameworks */ = {
@@ -230,9 +236,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TechkidsHotGirl/Pods-TechkidsHotGirl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hex/Hex.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hex.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -245,13 +262,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechkidsHotGirl-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B8E0938DF26A76259D9F6CB7 /* [CP] Copy Pods Resources */ = {
@@ -277,12 +297,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				500A319E1FC458F600C42A36 /* HotGirlImage.swift in Sources */,
+				505D4A421FC5180E002D514B /* Constants.swift in Sources */,
 				500A31A11FC4591B00C42A36 /* StoryboardInstantiable.swift in Sources */,
+				505D4A461FC533FE002D514B /* CollectionViewRegisterable.swift in Sources */,
+				505D4A401FC5179E002D514B /* HotGirlImageProvider.swift in Sources */,
 				500A31A61FC45B7400C42A36 /* HotGirlUser.swift in Sources */,
-				500A31AE1FC473A400C42A36 /* HomeViewModel.swift in Sources */,
 				500A31AB1FC45E7A00C42A36 /* HotGirlImageCollectionViewCell.swift in Sources */,
-				500A31B01FC474D900C42A36 /* HomeCollectionViewDataSource.swift in Sources */,
 				500A31A41FC45A1000C42A36 /* AppCoordinator.swift in Sources */,
+				505D4A441FC51ECC002D514B /* HotGirlimageList.swift in Sources */,
 				500A31871FC4585700C42A36 /* AppDelegate.swift in Sources */,
 				500A319A1FC458B800C42A36 /* HomeViewController.swift in Sources */,
 			);

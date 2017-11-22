@@ -7,6 +7,7 @@ target 'TechkidsHotGirl' do
 
   # Pods for TechkidsHotGirl
   pod 'SDWebImage/WebP'
-  pod 'RxSwift'
-  pod 'RxCocoa'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'Hex'
 end
